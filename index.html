@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+
+	<style>
+	    body {
+			background-color: #3B3B3B;
+		}
+		canvas {
+		    background-color: gray;
+			display: block;
+			margin: auto;
+		}
+		div, section, body p {
+		    text-align: center;
+		}
+		section {
+		    display: flex;
+			justify-content: center;
+		}
+		p {
+		    color: white;
+		}
+	</style>
+
+	<script src="script.js" type="module" defer></script>
+    </head>
+
+    <body>
+        <canvas width="800" height="600">game</canvas>
+        <p>Offset</p>
+        <section>
+            <div>
+                <input type="range" id="x" value="0" min="-10" max="10">
+                <p id="x-p">X: 0</p>
+            </div>
+            <div>
+                <input type="range" id="y" value="0" min="-10" max="10">
+                <p id="y-p">Y: 0</p>
+            </div>
+            <div>
+                <input type="range" id="z" value="0" min="0" max="20">
+                <p id="z-p">Z: 0</p>
+            </div>
+        </section>
+    </body>
+</html>
