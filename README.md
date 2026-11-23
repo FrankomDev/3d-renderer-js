@@ -1,15 +1,9 @@
 # html canvas 3d renderer
 
-Display obj model:
+Display your obj model:
 ```shell
 python3 obj_to_js.py path/to/file.obj
 ```
-
-You may need to run this from webserver, simplest approach:
-```shell
-python3 -m http.server
-```
-and open <http://127.0.0.1:8000>
 
 ![](screenshot.png)
 

@@ -1,5 +1,3 @@
-import { points, lines } from "./model.js";
-
 const xyz = [
   document.getElementById("x"),
   document.getElementById("y"),

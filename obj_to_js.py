@@ -39,14 +39,14 @@ if len(vertices) == 0:
     sys.exit()
 
 with open("model.js", "w") as f:
-    f.write("export const points = [\n")
+    f.write("const points = [\n")
 
     for v in vertices:
         f.write(f"\t{{x: {v[0]}, y: {v[1]}, z: {v[2]}}},\n")
 
     f.write("]\n\n")
 
-    f.write("export const lines = [\n")
+    f.write("const lines = [\n")
     for face in faces:
         f.write("\t[")
         for v in face:
